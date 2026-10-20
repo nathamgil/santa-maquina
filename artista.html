@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha de personagem · Santa Máquina</title>
+<meta name="description" content="Ficha dos artistas da Santa Máquina Tatuagem, estúdio geek de Salvador: atributos, estilos, inventário de peças e missão direta com cada um.">
+<meta name="theme-color" content="#0D0A14">
+<link rel="icon" href="fotos/logo.jpg">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ficha de personagem · Santa Máquina">
+<meta property="og:description" content="Veja atributos e inventário de cada artista e comece sua missão.">
+<meta property="og:image" content="fotos/peter-perfil.jpg">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261020132347">
+</head>
+<body>
+
+<div id="faixa-demo" class="faixa-demo" hidden>
+  <b>Modo demo.</b> A missão funciona de verdade, mas fica salva só neste aparelho até ligarmos o banco de dados.
+</div>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html" aria-label="Santa Máquina, início">
+      <img src="fotos/logo.jpg" alt="" width="46" height="46">
+      <span><b>Santa Máquina</b><small>Tatuagem geek · Salvador</small></span>
+    </a>
+    <nav class="menu" aria-label="Seções">
+      <a href="index.html#personagens">Personagens</a>
+      <a href="index.html#inventario">Inventário</a>
+      <a href="processo.html">Níveis</a>
+      <a href="index.html#local">Dungeon</a>
+    </nav>
+    <a class="btn btn-start mini" href="index.html#agendar">Start</a>
+  </div>
+</header>
+
+<main>
+  <!-- slug inexistente: mostra a party -->
+  <section class="secao" id="art-nao-achei" hidden>
+    <div class="wrap">
+      <p class="olho">Game over?</p>
+      <h2>Personagem não encontrado</h2>
+      <p class="sub">Esse nome não está na party. Selecione um destes:</p>
+      <div class="party" id="lista-equipe"></div>
+    </div>
+  </section>
+
+  <div id="artista-pagina" hidden>
+    <section class="art-capa">
+      <div class="estrelas" aria-hidden="true"></div>
+      <div class="wrap dossie">
+        <div id="art-cartaz"></div>
+        <div class="dossie-txt">
+          <a class="voltar-equipe" href="index.html#personagens">← Selecionar outro personagem</a>
+          <p class="olho">Ficha de personagem</p>
+          <h1 id="art-nome"></h1>
+          <a class="arroba" id="art-arroba" target="_blank" rel="noopener"></a>
+          <p class="linha" id="art-linha"></p>
+          <p class="art-frase" id="art-frase" hidden></p>
+          <span class="rotulo-campo">Habilidades</span>
+          <div class="estilos" id="art-estilos" aria-label="Especialidades"></div>
+          <div class="acoes">
+            <a class="btn btn-start" id="art-pedir" href="index.html#agendar">Começar missão</a>
+            <span id="art-extras" style="display:contents"></span>
+            <button class="btn btn-linha" id="art-compartilhar" type="button">Compartilhar ficha</button>
+          </div>
+          <p class="compartilhado" id="art-compartilhado" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-roxa" id="art-sobre" hidden>
+      <div class="wrap sobre">
+        <div>
+          <p class="olho">Lore</p>
+          <h2>História do personagem</h2>
+          <ul class="art-bio" id="art-bio"></ul>
+        </div>
+        <div>
+          <p class="olho">Atributos</p>
+          <ul class="atributos" id="art-atributos" hidden></ul>
+          <p class="ajuda">Atributos tirados da bio do artista.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="wrap">
+        <p class="olho">Inventário</p>
+        <h2 id="art-port-titulo">Inventário</h2>
+        <div class="mural" id="art-portfolio"></div>
+        <div class="sem-portfolio" id="art-sem-fotos" hidden>
+          <img src="" alt="" width="84" height="84">
+          <div>
+            <b>Inventário carregando</b>
+            <p></p>
+            <div class="acoes" style="margin-top:.8rem"><a class="btn btn-linha mini" target="_blank" rel="noopener"></a></div>
+          </div>
+        </div>
+        <div class="acoes" style="margin-top:2rem">
+          <a class="btn btn-start" id="art-pedir-2" href="index.html#agendar">Começar missão</a>
+          <a class="btn btn-linha" id="art-mais" target="_blank" rel="noopener">Ver mais no Instagram</a>
+          <a class="btn btn-linha" href="processo.html">Ver os níveis da missão</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-roxa">
+      <div class="wrap">
+        <p class="olho">Party</p>
+        <h2>Outros personagens</h2>
+        <div class="party" id="lista-outros"></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-in">
+      <div style="max-width:22rem">
+        <a class="marca" href="index.html" style="margin-bottom:.9rem">
+          <img src="fotos/logo.jpg" alt="" width="46" height="46">
+          <span><b>Santa Máquina</b><small>Tatuagem geek</small></span>
+        </a>
+        <p class="rodape-assina">✦ Welcome to the dungeon ✦</p>
+        <p>Salvador — BA. Atendimento com hora marcada. WhatsApp (71) 98821-5058.</p>
+      </div>
+      <div>
+        <b class="rodape-titulo">Menu</b>
+        <ul class="rodape-links">
+          <li><a href="index.html#agendar">Começar missão</a></li>
+          <li><a href="processo.html">Níveis: da ideia à pele</a></li>
+          <li><a href="https://www.instagram.com/santamaquina.tatuagem/" target="_blank" rel="noopener">@santamaquina.tatuagem</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="creditos">
+      <span>© <span id="ano"></span> Santa Máquina Tatuagem</span>
+    </div>
+  </div>
+</footer>
+
+<a class="flutua" id="art-flutua" href="index.html#agendar">▶ Start</a>
+
+<script src="assets/config.js?v=20261020132347"></script>
+<script src="assets/site.js?v=20261020132347"></script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santa Máquina Tatuagem · Welcome to the dungeon · Salvador</title>
+<meta name="description" content="Santa Máquina Tatuagem, estúdio geek de Salvador. Blackwork, contraste e desenho autoral com Peter Calaveras. Escolha seu personagem, aceite a missão e marque sua sessão pelo site.">
+<meta name="theme-color" content="#0D0A14">
+<link rel="icon" href="fotos/logo.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Santa Máquina Tatuagem · Welcome to the dungeon">
+<meta property="og:description" content="Estúdio geek de Salvador. Selecione seu personagem e comece a missão.">
+<meta property="og:image" content="fotos/logo.jpg">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261020132347">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"TattooParlor",
+  "name":"Santa Máquina Tatuagem",
+  "image":"fotos/logo.jpg",
+  "telephone":"+55 71 98821-5058",
+  "address":{"@type":"PostalAddress","addressLocality":"Salvador","addressRegion":"BA","addressCountry":"BR"},
+  "sameAs":["https://www.instagram.com/santamaquina.tatuagem/"]
+}
+</script>
+</head>
+<body>
+
+<div id="faixa-demo" class="faixa-demo" hidden>
+  <b>Modo demo.</b> A missão funciona de verdade aqui, mas fica salva só neste aparelho até ligarmos o banco de dados.
+</div>
+
+<!-- ================= TOPO ================= -->
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="#" aria-label="Santa Máquina, início">
+      <img src="fotos/logo.jpg" alt="" width="46" height="46">
+      <span><b>Santa Máquina</b><small>Tatuagem geek · Salvador</small></span>
+    </a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#personagens">Personagens</a>
+      <a href="#inventario">Inventário</a>
+      <a href="processo.html">Níveis</a>
+      <a href="#local">Dungeon</a>
+      <a href="#meu-horario">Save</a>
+    </nav>
+    <a class="btn btn-start mini" href="#agendar">Start</a>
+  </div>
+</header>
+
+<main>
+<!-- ================= CAPA ================= -->
+<section class="capa">
+  <div class="estrelas" aria-hidden="true"></div>
+  <div class="wrap capa-in">
+    <div class="capa-txt">
+      <p class="olho">✦✦✦ Santa Máquina Tatuagem ✦✦✦</p>
+      <h1>Welcome to the <span class="destaque">dungeon</span></h1>
+      <p class="lead">Estúdio de tatuagem geek em Salvador. Blackwork, contraste e desenho autoral, com atendimento de hora marcada. Escolha seu personagem, aceite a missão e saia daqui com uma tattoo que é a sua cara.</p>
+      <div class="caminhos">
+        <a class="btn btn-start caminho" href="index.html?artista=peter#agendar" data-embarcar="peter"><b>▶ Press start</b><small>começar minha missão</small></a>
+        <a class="btn btn-linha caminho" href="#personagens"><b>Selecionar personagem</b><small>ver quem tatua</small></a>
+      </div>
+      <ul class="hud" aria-label="Status do estúdio">
+        <li><span>Classe</span><b>Estúdio geek</b></li>
+        <li><span>Mapa</span><b>Salvador · BA</b></li>
+        <li><span>Modo</span><b>Hora marcada</b></li>
+      </ul>
+    </div>
+    <div class="capa-portal">
+      <div class="janela-pixel">
+        <img src="fotos/logo.jpg" alt="Logo da Santa Máquina: um portal em pixel roxo com o nome do estúdio em volta" width="400" height="400">
+      </div>
+      <p class="pisca" aria-hidden="true">Insert coin ▮</p>
+    </div>
+  </div>
+</section>
+
+<div class="fita-corre" aria-hidden="true">
+  <div>
+    <span>Blackwork</span><i>✦</i><span>Contraste</span><i>✦</i><span>Autoral</span><i>✦</i><span>Black &amp; redwork</span><i>✦</i><span>Geek</span><i>✦</i><span>Não seja um NPC</span><i>✦</i><span>Salvador</span><i>✦</i>
+    <span>Blackwork</span><i>✦</i><span>Contraste</span><i>✦</i><span>Autoral</span><i>✦</i><span>Black &amp; redwork</span><i>✦</i><span>Geek</span><i>✦</i><span>Não seja um NPC</span><i>✦</i><span>Salvador</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ================= NPC ================= -->
+<section class="secao" id="sobre">
+  <div class="wrap sobre">
+    <div>
+      <p class="olho">Lore</p>
+      <h2>Não seja um NPC</h2>
+      <p class="sub">
+        Na Santa Máquina a tatuagem é tratada como o que ela é: parte do seu personagem.
+        Cada peça nasce da sua identidade, da sua referência e do que você quer carregar na pele.
+      </p>
+      <p class="citacao">“A tatuagem nasce da sua identidade.”<small>Peter Calaveras</small></p>
+      <figure class="npc"><img src="fotos/post-npc.jpg" alt="Post Não seja um NPC: vários bonecos iguais em pixel e um diferente, de cabelo vermelho" loading="lazy"></figure>
+    </div>
+    <div class="jeitos">
+      <div class="jeito"><i aria-hidden="true">01</i><div><h3>Estúdio geek</h3><p>Games, anime, RPG e cultura pop fazem parte da casa, da conversa e das referências.</p></div></div>
+      <div class="jeito"><i aria-hidden="true">02</i><div><h3>Desenho autoral</h3><p>Arte pensada para você, ou um flash do álbum autoral do artista.</p></div></div>
+      <div class="jeito"><i aria-hidden="true">03</i><div><h3>Hora marcada</h3><p>Você escolhe o dia aqui pelo site e a missão fica reservada.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERSONAGENS ================= -->
+<section class="secao secao-roxa" id="personagens">
+  <div class="wrap">
+    <p class="olho">Selecione seu personagem</p>
+    <h2>Quem tatua na dungeon</h2>
+    <p class="sub">Abra a ficha para ver atributos e inventário, ou selecione e vá direto para a missão.</p>
+    <div class="party" id="lista-equipe"></div>
+  </div>
+</section>
+
+<!-- ================= INVENTÁRIO ================= -->
+<section class="secao" id="inventario">
+  <div class="wrap">
+    <p class="olho">Inventário</p>
+    <h2>Itens lendários</h2>
+    <p class="sub">Peças do Peter Calaveras. Toque em uma para ampliar e passar as outras.</p>
+    <div class="mural" id="mural-capa" data-max="6"></div>
+    <div class="acoes">
+      <a class="btn btn-linha" href="artista.html?a=peter">Ver a ficha do Peter</a>
+      <a class="btn btn-start" href="index.html?artista=peter#agendar" data-embarcar="peter">Começar missão com o Peter</a>
+    </div>
+
+    <h3 class="passo-titulo">Drops do estúdio</h3>
+    <p class="sub">Peças publicadas no @santamaquina.tatuagem.</p>
+    <div class="mural mural-mini" id="mural-estudio"></div>
+  </div>
+</section>
+
+<!-- ================= GRIMÓRIO ================= -->
+<section class="secao secao-roxa" id="grimorio">
+  <div class="wrap">
+    <p class="olho">Grimório</p>
+    <h2>Pergaminhos da dungeon</h2>
+    <p class="sub">O estúdio fala com a sua tribo. Alguns pergaminhos do Instagram:</p>
+    <div class="pergaminhos">
+      <a class="pergaminho" href="processo.html#cuidados">
+        <img src="fotos/post-guia-sobrevivencia.jpg" alt="Post Guia de sobrevivência do tatuado: um cavaleiro descansando na fogueira" loading="lazy">
+        <b>Guia de sobrevivência do tatuado</b>
+        <span>Porque até os heróis precisam de pós-cuidado. Leia o pós-tattoo modo hard →</span>
+      </a>
+      <a class="pergaminho" href="processo.html#cuidados">
+        <img src="fotos/post-protetor.jpg" alt="Post Use protetor solar, campanha contra o desbotamento de tatuagens" loading="lazy">
+        <b>Use protetor solar</b>
+        <span>Campanha da casa contra o desbotamento das tatuagens →</span>
+      </a>
+      <a class="pergaminho" href="https://www.instagram.com/santamaquina.tatuagem/" target="_blank" rel="noopener">
+        <img src="fotos/post-indicacao.jpg" alt="Post Indicação do mês: um mago com cajado" loading="lazy">
+        <b>Indicação do mês</b>
+        <span>Nossos magos dividem a sabedoria milenar com você →</span>
+      </a>
+      <a class="pergaminho" href="https://www.instagram.com/santamaquina.tatuagem/" target="_blank" rel="noopener">
+        <img src="fotos/post-tipo-tatuado.jpg" alt="Post Qual tipo de tatuado você é?" loading="lazy">
+        <b>Qual tipo de tatuado você é?</b>
+        <span>Ou conhece alguém que seja… →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="secao" id="sessoes">
+  <div class="wrap">
+    <p class="olho">Tutorial</p>
+    <h2>Como a missão funciona</h2>
+    <p class="sub">Uns dois minutos, sem cadastro. <a class="link" href="processo.html">Ver todos os níveis, da ideia à pele</a>.</p>
+    <ol class="mapa-passos">
+      <li><h3>Selecione o personagem</h3><p>Escolha quem vai tatuar você.</p></li>
+      <li><h3>Escolha a missão</h3><p>Conversa de orçamento, flash autoral ou sessão.</p></li>
+      <li><h3>Mostre o mapa</h3><p>Estilo, local, tamanho e até cinco imagens de referência.</p></li>
+      <li><h3>Salve o jogo</h3><p>Escolha o dia, receba o código e mande o resumo no WhatsApp.</p></li>
+    </ol>
+
+    <h3 class="passo-titulo">Sem tabela: tudo sob orçamento</h3>
+    <p class="sub">O valor depende do tamanho, do local e do detalhe. A missão escolhida só reserva o tempo certo na agenda.</p>
+    <div class="tipos" id="tipos"><div class="carregando">Carregando…</div></div>
+  </div>
+</section>
+
+<!-- ================= MISSÃO ================= -->
+<section class="secao secao-roxa agendar" id="agendar">
+  <div class="wrap">
+    <p class="olho">Nova missão</p>
+    <h2>Aceitar a missão</h2>
+    <p class="sub">No fim, o resumo sai pronto para mandar no WhatsApp do estúdio.</p>
+
+    <div class="painel" id="agendar-app">
+
+      <div class="passos" id="passos">
+        <div class="passo" data-estado="atual">1 · Personagem</div>
+        <div class="passo" data-estado="aberto">2 · Missão</div>
+        <div class="passo" data-estado="aberto">3 · Mapa</div>
+        <div class="passo" data-estado="aberto">4 · Dia</div>
+        <div class="passo" data-estado="aberto">5 · Jogador</div>
+      </div>
+
+      <div class="escolhas" id="escolhas" hidden></div>
+
+      <!-- 1 -->
+      <div class="etapa" data-etapa="1" data-ativa>
+        <h3>Selecione seu personagem</h3>
+        <p class="dica">Quem vai fazer a sua tattoo.</p>
+        <div class="lista-barbeiros" id="lista-barbeiros"></div>
+      </div>
+
+      <!-- 2 -->
+      <div class="etapa" data-etapa="2">
+        <h3>Escolha a missão</h3>
+        <p class="dica">Tudo sob orçamento. Na dúvida, comece pela conversa de orçamento.</p>
+        <div id="lista-servicos"></div>
+        <div class="acoes"><button class="voltar" type="button" data-voltar="1">← Trocar personagem</button></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="etapa" data-etapa="3">
+        <h3>Mostre o mapa</h3>
+        <p class="dica">Quanto mais detalhe, mais certeiro vem o orçamento.</p>
+
+        <div class="projeto" id="projeto">
+          <div class="campos">
+            <div id="pj-estilo-box">
+              <span class="rotulo-campo">Estilo</span>
+              <div class="chips" id="pj-estilo" role="group" aria-label="Estilo"></div>
+            </div>
+            <div class="campos-2">
+              <div class="campo">
+                <label for="pj-local">Local do corpo</label>
+                <select id="pj-local">
+                  <option value="">Escolha</option>
+                  <option>Antebraço</option><option>Braço</option><option>Ombro</option>
+                  <option>Mão / dedos</option><option>Costas</option><option>Costela</option>
+                  <option>Peito</option><option>Barriga</option><option>Quadril</option><option>Coxa</option>
+                  <option>Perna / panturrilha</option><option>Pé / tornozelo</option>
+                  <option>Pescoço / nuca</option><option>Outro</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="pj-tamanho">Tamanho aproximado</label>
+                <select id="pj-tamanho">
+                  <option value="">Não sei ainda</option>
+                  <option>Até 5 cm</option><option>5 a 10 cm</option><option>10 a 20 cm</option>
+                  <option>Mais de 20 cm</option><option>Fechamento (braço, perna ou costas)</option>
+                </select>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="pj-ideia">Sua ideia</label>
+              <textarea id="pj-ideia" maxlength="600" placeholder="Ex: caveira com serpente em blackwork e vermelho na panturrilha, ou um personagem do meu jogo favorito"></textarea>
+            </div>
+            <div class="campos-2">
+              <div>
+                <span class="rotulo-campo">É sua primeira tattoo?</span>
+                <div class="chips" data-grupo="primeira" data-rotulo="Primeira tattoo"><button type="button" class="chip" aria-pressed="false">Sim</button><button type="button" class="chip" aria-pressed="false">Não</button></div>
+              </div>
+              <div>
+                <span class="rotulo-campo">Referência geek?</span>
+                <div class="chips" data-grupo="geek" data-rotulo="Referência geek"><button type="button" class="chip" aria-pressed="false">Game</button><button type="button" class="chip" aria-pressed="false">Anime</button><button type="button" class="chip" aria-pressed="false">Filme / série</button><button type="button" class="chip" aria-pressed="false">Não</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="msg-projeto"></div>
+        <div class="acoes">
+          <button class="btn btn-start" id="pj-continuar" type="button">Escolher o dia →</button>
+          <button class="voltar" type="button" data-voltar="2">← Trocar a missão</button>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="etapa" data-etapa="4">
+        <h3>Escolha o dia</h3>
+        <p class="dica">O horário marca o começo da sessão. A confirmação final vem pelo WhatsApp.</p>
+        <div class="fita" id="fita-dias"></div>
+        <p class="titulo-dia" id="titulo-dia"></p>
+        <div id="caixa-horas"></div>
+        <div class="acoes"><button class="voltar" type="button" data-voltar="3">← Voltar</button></div>
+      </div>
+
+      <!-- 5 -->
+      <div class="etapa" data-etapa="5">
+        <h3>Jogador</h3>
+        <p class="dica">Só falta saber com quem a gente vai falar.</p>
+        <div class="resumo" id="resumo"></div>
+        <form id="form-cliente" novalidate>
+          <div class="campos">
+            <div class="campo">
+              <label for="cli-nome">Seu nome</label>
+              <input id="cli-nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome de aventureiro (o de verdade)" required>
+            </div>
+            <div class="campo">
+              <label for="cli-tel">WhatsApp</label>
+              <input id="cli-tel" name="tel" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(71) 9 0000-0000" required>
+              <p class="ajuda">Para o estúdio falar com você sobre a missão. Não vai para lista de propaganda.</p>
+            </div>
+            <div class="campo">
+              <label for="cli-obs"><span id="cli-obs-rot">Algo mais</span> <small>(opcional)</small></label>
+              <textarea id="cli-obs" name="obs" maxlength="240" placeholder="Algo mais que a gente precisa saber"></textarea>
+            </div>
+          </div>
+          <div id="msg-form"></div>
+          <div class="acoes">
+            <button class="btn btn-start" id="btn-confirmar" type="submit">Aceitar missão</button>
+            <button class="voltar" type="button" data-voltar="4">← Trocar o dia</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 6 -->
+      <div class="etapa" data-etapa="6">
+        <div class="sucesso">
+          <div class="selo-ok" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3>Missão aceita!</h3>
+          <p class="com">com <span id="ok-barbeiro"></span></p>
+          <p class="dica" id="ok-linha" style="margin:.4rem 0 1rem"></p>
+          <p class="rotulo-codigo">Código do save</p>
+          <div class="codigo" id="ok-codigo"></div>
+          <p class="expl">
+            O horário fica reservado. Agora mande o resumo no WhatsApp: o valor é combinado antes da sessão.
+            Com esse código você consulta ou cancela até 2 horas antes.
+          </p>
+          <div class="acoes">
+            <a class="btn btn-zap" id="ok-zap" target="_blank" rel="noopener">Mandar resumo</a>
+            <button class="btn btn-linha" id="ok-copiar" type="button">Copiar resumo</button>
+            <a class="btn btn-linha" id="ok-ics">Salvar no calendário</a>
+            <button class="btn btn-linha" id="btn-novo" type="button">Nova missão</button>
+          </div>
+          <p class="copiado" id="ok-copiado" aria-live="polite"></p>
+          <p class="dica"><a class="link" href="processo.html#cuidados">Já leia o pós-tattoo modo hard</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SAVE ================= -->
+<section class="secao" id="meu-horario">
+  <div class="wrap dupla">
+    <div>
+      <p class="olho">Continue?</p>
+      <h2>Carregar meu save</h2>
+      <p class="sub">
+        Deu imprevisto? Cancele por aqui e o horário volta para a agenda.
+        O cancelamento pelo site vale até <b>2 horas antes</b>. Depois disso, chame o estúdio no WhatsApp.
+      </p>
+    </div>
+    <div class="cartao">
+      <form id="form-consulta">
+        <div class="campos">
+          <div class="campo">
+            <label for="con-codigo">Código do save</label>
+            <input id="con-codigo" type="text" placeholder="Ex: A3F91C" style="text-transform:uppercase" required>
+          </div>
+          <div class="campo">
+            <label for="con-tel">WhatsApp usado</label>
+            <input id="con-tel" type="tel" inputmode="numeric" placeholder="(71) 9 0000-0000" required>
+          </div>
+          <button class="btn btn-start btn-bloco" type="submit">Carregar save</button>
+        </div>
+      </form>
+      <div id="saida-consulta"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DUNGEON ================= -->
+<section class="secao secao-roxa" id="local">
+  <div class="wrap">
+    <p class="olho">Mapa</p>
+    <h2>Onde fica a dungeon</h2>
+    <div class="local-in">
+      <div>
+        <div class="info-item"><b class="rot">Cidade</b><span>Salvador — BA<small>Endereço completo pelo WhatsApp do estúdio.</small></span></div>
+        <div class="info-item"><b class="rot">Atendimento</b><span>Com hora marcada<small>Peça pelo site e o estúdio confirma o horário com você.</small></span></div>
+        <div class="info-item"><b class="rot">WhatsApp</b><a href="https://wa.me/5571988215058" target="_blank" rel="noopener">(71) 98821-5058</a></div>
+        <div class="info-item"><b class="rot">Instagram</b><a href="https://www.instagram.com/santamaquina.tatuagem/" target="_blank" rel="noopener">@santamaquina.tatuagem</a> · <a href="https://www.instagram.com/petercalaverastattoo/" target="_blank" rel="noopener">@petercalaverastattoo</a></div>
+        <div class="acoes">
+          <a class="btn btn-zap" href="https://wa.me/5571988215058" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="mapa mapa-pixel" id="mapa" aria-hidden="true">
+        <div class="mapa-8bit">
+          <span class="pin">✦</span>
+          <b>Salvador · BA</b>
+          <small>Você está aqui (quase)</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-in">
+      <div style="max-width:22rem">
+        <a class="marca" href="#" style="margin-bottom:.9rem">
+          <img src="fotos/logo.jpg" alt="" width="46" height="46">
+          <span><b>Santa Máquina</b><small>Tatuagem geek</small></span>
+        </a>
+        <p class="rodape-assina">✦ Welcome to the dungeon ✦</p>
+        <p>Salvador — BA. Atendimento com hora marcada.</p>
+      </div>
+      <div>
+        <b class="rodape-titulo">Party</b>
+        <ul class="rodape-links">
+          <li><a href="artista.html?a=peter">Peter Calaveras · Final boss</a></li>
+        </ul>
+      </div>
+      <div>
+        <b class="rodape-titulo">Menu</b>
+        <ul class="rodape-links">
+          <li><a href="#agendar">Começar missão</a></li>
+          <li><a href="processo.html">Níveis: da ideia à pele</a></li>
+          <li><a href="processo.html#cuidados">Pós-tattoo modo hard</a></li>
+          <li><a href="#meu-horario">Carregar save</a></li>
+          <li><a href="admin.html">Área do estúdio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="creditos">
+      <span>© <span id="ano"></span> Santa Máquina Tatuagem</span>
+      <span>Guardamos seu nome, WhatsApp e a descrição do pedido só para organizar a agenda. Para apagar seus dados, é só pedir no WhatsApp.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="flutua" href="#agendar">▶ Start</a>
+
+<script src="assets/config.js?v=20261020132347"></script>
+<script src="assets/demo.js?v=20261020132347"></script>
+<script src="assets/site.js?v=20261020132347"></script>
+<script src="assets/tattoo.js?v=20261020132347"></script>
+<script src="assets/agenda.js?v=20261020132347"></script>
+</body>
+</html>
